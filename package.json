@@ -1,6 +1,6 @@
 {
   "name": "language-api-blueprint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "API Blueprint & MSON Grammars",
   "scripts": {
     "build": "node generate-grammar.js"
