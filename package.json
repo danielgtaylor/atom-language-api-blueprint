@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node generate-grammar.js"
   },
-  "repository": "https://github.com/danielgtaylor/atom-api-blueprint",
+  "repository": "https://github.com/danielgtaylor/atom-language-api-blueprint",
   "license": "MIT",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
