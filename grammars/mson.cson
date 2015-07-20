@@ -86,7 +86,7 @@ repository:
       "1":
         name: "variable.unordered.list.gfm"
   "mson-example-value":
-    match: ":(.*?)(?=\\(|-|$)"
+    match: ":\\s(`.*?`|(.*?)(?=\\(|-|$))"
     captures:
       "1":
         name: "mson.field.example markup.raw.inline"

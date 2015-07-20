@@ -35,7 +35,7 @@ patterns: [
   }
   {
     name: "blueprint.response.json"
-    begin: "([-+*]) ([Rr]equest|[Rr]esponse) (\\d+)? ?\\(?(\\(.*json\\)?)"
+    begin: "([-+*]) ([Rr]equest|[Rr]esponse) (\\d+)?(?: (\\(.*\\/+json(?:[ ;\\/]+.*)?\\)))+"
     end: "^(?=\\S)"
     beginCaptures:
       "1":
@@ -73,7 +73,7 @@ patterns: [
   }
   {
     name: "blueprint.response.xml"
-    begin: "([-+*]) ([Rr]equest|[Rr]esponse) (\\d+)? ?\\(?(\\(.*xml\\)?)"
+    begin: "([-+*]) ([Rr]equest|[Rr]esponse) (\\d+)?(?: (\\(.*\\/+xml(?:[ ;\\/]+.*)?\\)))+"
     end: "^(?=\\S)"
     beginCaptures:
       "1":
@@ -111,7 +111,7 @@ patterns: [
   }
   {
     name: "blueprint.response"
-    begin: "([-+*]) ([Rr]equest|[Rr]esponse) (\\d+)? ?\\(?(\\(.*)\\)?"
+    begin: "([-+*]) ([Rr]equest|[Rr]esponse) ?(\\d+)?(?: (\\(.*\\))+)?"
     end: "^(?=\\S)"
     beginCaptures:
       "1":
